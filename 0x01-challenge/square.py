@@ -13,16 +13,18 @@ class Square():
     """
 
     width = 0
-    length = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
         """Instanciates a square object"""
+        self.width = 0
+        self.height = 0
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.length
+        return self.width * self.width
 
     def perimeter_Of_my_quare(self):
         """Permeter of the square"""
