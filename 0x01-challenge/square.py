@@ -24,20 +24,20 @@ class Square():
 
     def area_of_my_square(self):
         """ Area of the square """
-        return self.width * self.width
+        return self.width * self.height
 
     def perimeter_of_my_square(self):
         """Permeter of the square"""
-        return (self.width * 2) + (self.length * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """String represenation of the squares dimensions"""
-        return "{}/{}".format(self.width, self.length)
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
 
-    s = Square(width=12, length=12)
+    s = Square(width=12, height=12)
     print(s)
     print(s.area_of_my_square())
     print(s.perimeter_of_my_square())
