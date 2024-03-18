@@ -2,26 +2,25 @@
 """
     Defines a square class
 """
-class square():
-    """Defines  a square object
-        Attributes:
-        width = width of the square
-        length = length of the square
+class Square():
+    """Defines  a square object.
+
+    Attributes:
+        width (int): width of the square
+        length (int): length of the square
     """
-    width = 0
-    length = 0
 
     
     def __init__(self, *args, **kwargs):
         """Instanciates a square object"""
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        self.width = kwargs.get('width', 0)
+        self.length = kwargs.get('length',0)
 
     def area_of_my_square(self):
         """ Area of the square """
         return self.width * self.length
 
-    def PermiterOfMySquare(self):
+    def perimeter_Of_my_quare(self):
         """Permeter of the square"""
         return (self.width * 2) + (self.length * 2)
 
