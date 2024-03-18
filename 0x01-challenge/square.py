@@ -13,6 +13,7 @@ class square():
 
     
     def __init__(self, *args, **kwargs):
+        """Instanciates a square object"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
