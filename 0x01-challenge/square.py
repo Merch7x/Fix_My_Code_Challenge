@@ -2,6 +2,8 @@
 """
     Defines a square class
 """
+
+
 class Square():
     """Defines  a square object.
 
@@ -10,11 +12,10 @@ class Square():
         length (int): length of the square
     """
 
-    
     def __init__(self, *args, **kwargs):
         """Instanciates a square object"""
         self.width = kwargs.get('width', 0)
-        self.length = kwargs.get('length',0)
+        self.length = kwargs.get('length', 0)
 
     def area_of_my_square(self):
         """ Area of the square """
@@ -27,6 +28,7 @@ class Square():
     def __str__(self):
         """String represenation of the squares dimensions"""
         return "{}/{}".format(self.width, self.length)
+
 
 if __name__ == "__main__":
 
