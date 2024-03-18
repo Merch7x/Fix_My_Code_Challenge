@@ -12,10 +12,13 @@ class Square():
         length (int): length of the square
     """
 
+    width = 0
+    length = 0
+
     def __init__(self, *args, **kwargs):
         """Instanciates a square object"""
-        self.width = kwargs.get('width', 0)
-        self.length = kwargs.get('length', 0)
+        for key, value in kwargs.items():
+            setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
